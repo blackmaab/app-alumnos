@@ -1,0 +1,127 @@
+/* 
+    Document   : style
+    Created on : 02-28-2013, 07:41:55 PM
+    Author     : Mario Alvarado
+*/
+
+body{
+    /*background:#2E5E79;*/
+    background: #ebebeb;
+}
+#divPage{
+    width:990px; margin:0 auto; min-height:100%;    
+}
+
+#divFormLogin{
+    margin-left:27%;
+}
+
+#divHead{
+    padding-bottom: 80px;
+}
+#login-box {
+    width:333px;
+    height: 352px;
+    padding: 58px 76px 0 76px;
+    color: #ebebeb;
+    font: 12px Arial, Helvetica, sans-serif;
+    /*background: #0d2c52;*/
+    background: #1A3A52;
+    border-radius: 5px;    
+    -webkit-border-radius: 5px 5px 5px 5px;  /* Safari  */
+    -moz-border-radius: 5px 5px 5px 5px;     /* Firefox */
+    box-shadow: 0 1px 8px 3px #000;
+    -webkit-box-shadow: 0 1px 8px 3px #000;
+    -moz-box-shadow: 0 1px 8px 3px #000; 
+}
+
+#login-box img {
+    border:none;
+}
+
+#login-box h2 {
+    padding:0;
+    margin:0;
+    color: #ebebeb;
+    font: bold 44px "Calibri", Arial;
+    background: url('../images/alumnos.png') right 40px top 25px no-repeat;
+}
+
+
+#login-box-name {
+    float: left;
+    display:inline;
+    width:80px;
+    text-align: right;
+    padding: 14px 10px 0 0;
+    margin:0 0 7px 0;
+}
+
+#login-box-field {
+    float: left;
+    display:inline;
+    width:230px;
+    margin:0;
+    margin:0 0 7px 0;
+}
+
+
+.form-login  {
+    width: 205px;
+    padding: 10px 4px 6px 3px;
+    border: 1px solid #0d2c52;
+    /*background-color:#1e4f8a;*/
+    background:url(../images/nav-repeat2.jpg) repeat-x !important;
+    font-size: 16px;
+    color: #ebebeb;
+    text-align: center;
+}
+
+
+.login-box-options  {
+    clear:both;
+    padding-left: 115px;
+    font-size: 11px;
+}
+
+.login-box-options a {
+    color: #ebebeb;
+    font-size: 11px;
+}
+
+.divButton{
+    float: right;
+    margin-right: 30px;
+    width: 103px;
+    height: 42px;
+    /*background-color:#1e4f8a;*/
+    background:url(../images/nav-repeat2.jpg) repeat-x ;
+    border-radius: 3px;    
+    -webkit-border-radius: 3px 3px 3px 3px;  /* Safari  */
+    -moz-border-radius: 3px 3px 3px 3px;     /* Firefox */
+}
+.divButton .none-a{    
+    color: white;
+    text-decoration: none;    
+    font-family: Arial;
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.divButton .none-a .button{    
+    background: url('../images/lock.png') left top 4px no-repeat;
+    padding-top: 8px;
+    padding-left: 30px;
+}
+
+.divButton:hover{
+    background: #3f7227;
+}
+
+#divFoot{
+    padding-top: 5px;
+    font-family: 'Calibri';
+    color:#0d2c52;
+    font-weight: bold;
+    text-align: center;
+}
