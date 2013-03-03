@@ -21,6 +21,7 @@ define('LAYOUT_DEFECTO', 'layout_default.php');
 define('MODULO_PATH', realpath('view'));
 define('LAYOUT_PATH', realpath('view/layouts/'));
 define('LAYOUT_ADMIN', 'layout_admin.php');
+define('LAYOUT_SECRE', 'layout_secretaria.php');
 
 $conf['404'] = array(
     'archivo' => '404.view.php',
@@ -54,7 +55,7 @@ $conf['adminAulas'] = array(
 );
 
 $conf['adminAsignacionCursos'] = array(
-    'archivo' => 'admin/usuarios.view.html',
+    'archivo' => 'admin/asignacion.view.html',
     'layout' => LAYOUT_ADMIN
 );
 
@@ -71,21 +72,21 @@ $conf['adminUsuarios'] = array(
 
 $conf['secre'] = array(
     'archivo' => 'secretaria/index.view.html',
-    'layout' => LAYOUT_ADMIN
+    'layout' => LAYOUT_SECRE
 );
 
 $conf['secreAlumnos'] = array(
     'archivo' => 'secre/',
-    'layout' => LAYOUT_ADMIN
+    'layout' => LAYOUT_SECRE
 );
 
 $conf['secrePagos'] = array(
     'archivo' => 'admin/',
-    'layout' => LAYOUT_ADMIN
+    'layout' => LAYOUT_SECRE
 );
 
 $conf['secreInformes'] = array(
     'archivo' => 'admin/',
-    'layout' => LAYOUT_ADMIN
+    'layout' => LAYOUT_SECRE
 );
 ?>
