@@ -7,9 +7,23 @@
         <link rel="stylesheet" type="text/css" href="<?php echo PATH_CSS; ?>/text.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="<?php echo PATH_CSS; ?>/layout.css" media="screen" />        
         <link rel="stylesheet" type="text/css" href="<?php echo PATH_CSS; ?>/nav.css" media="screen" />
-
-
+        <link rel="stylesheet" type="text/css" href="<?php echo PATH_CSS; ?>/cupertino/jquery-ui-1.10.1.custom.css" media="screen" />
         
+<!--        <link rel="stylesheet" type="text/css" href="<?php echo PATH_PLUGINS; ?>/wysihtml5/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo PATH_PLUGINS; ?>/wysihtml5/prettify.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo PATH_PLUGINS; ?>/wysihtml5/bootstrap-wysihtml5.css" />-->
+
+        <script type="text/javascript" src="<?php echo PATH_JS; ?>/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="<?php echo PATH_JS; ?>/jquery-ui-1.10.1.custom.js"></script>
+        
+
+<!--        <script src="<?php echo PATH_PLUGINS; ?>/wysihtml5/wysihtml5-0.3.0.js"></script>        
+        <script src="<?php echo PATH_PLUGINS; ?>/wysihtml5/prettify.js"></script>
+        <script src="<?php echo PATH_PLUGINS; ?>/wysihtml5/bootstrap.js"></script>
+        <script src="<?php echo PATH_PLUGINS; ?>/wysihtml5/bootstrap-wysihtml5.js"></script>-->
+        
+        
+        <script type="text/javascript" src="<?php echo PATH_JS; ?>/setup.js"></script>
     </head>
     <body>
         <div class="container_12">
@@ -41,37 +55,37 @@
             <div class="grid_12">
                 <ul class="nav main">
                     <li class="ic-cursos">
-                        <a href="#">
+                        <a href="?mod=adminCursos">
                             <span>Cursos</span>
                         </a> 
                     </li>
                     <li class="ic-horarios">
-                        <a href=#">
+                        <a href="?mod=adminHorarios">
                             <span>Horarios</span>
                         </a>
                     </li>
                     <li class="ic-aulas">
-                        <a href="#">
+                        <a href="?mod=adminAulas">
                             <span>Aulas</span>
                         </a>
                     </li>
                     <li class="ic-asignacion">
-                        <a href="#">
+                        <a href="?mod=adminAsignacionCursos">
                             <span>Asignacion de Cursos</span>
                         </a>
                     </li>
                     <li class="ic-mantenimiento">
-                        <a href="#">
+                        <a href="?mod=adminPersonas">
                             <span>Mantenimiento de Personas</span>
                         </a>
                     </li>
                     <li class="ic-usuario">
-                        <a href="#">
+                        <a href="?mod=adminUsuarios">
                             <span>Usuarios Registrados</span>
                         </a>                        
                     </li>
                     <li class="ic-notifications">
-                        <a href="#">
+                        <a href="?mod=admin">
                             <span>Informaci&oacute;n</span>
                         </a>
                     </li>
