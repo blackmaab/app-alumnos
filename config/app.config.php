@@ -34,7 +34,37 @@ $conf['index'] = array(
 );
 
 $conf['admin'] = array(
-    'archivo' => 'admin/admin.view.html',
+    'archivo' => 'admin/index.view.html',
+    'layout' => LAYOUT_ADMIN
+);
+
+$conf['adminCursos'] = array(
+    'archivo' => 'admin/cursos.view.html',
+    'layout' => LAYOUT_ADMIN
+);
+
+$conf['adminHorarios'] = array(
+    'archivo' => 'admin/horarios.view.html',
+    'layout' => LAYOUT_ADMIN
+);
+
+$conf['adminAulas'] = array(
+    'archivo' => 'admin/aulas.view.html',
+    'layout' => LAYOUT_ADMIN
+);
+
+$conf['adminAsignacionCursos'] = array(
+    'archivo' => 'admin/usuarios.view.html',
+    'layout' => LAYOUT_ADMIN
+);
+
+$conf['adminPersonas'] = array(
+    'archivo' => 'admin/personas.view.html',
+    'layout' => LAYOUT_ADMIN
+);
+
+$conf['adminUsuarios'] = array(
+    'archivo' => 'admin/usuarios.view.html',
     'layout' => LAYOUT_ADMIN
 );
 ?>
