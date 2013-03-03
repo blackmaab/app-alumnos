@@ -3,6 +3,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="<?php echo PATH_CSS; ?>/style.css" rel="stylesheet" type="text/css"/> 
+        <script type="text/javascript" src="<?php echo PATH_JS?>/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="<?php echo PATH_JS?>/login.js"></script>
         <title>.:Sistema de Control de Alumnos:.</title>
     </head>
     <body>

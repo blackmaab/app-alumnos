@@ -40,7 +40,7 @@
                             <ul class="inline-ul floatleft">
                                 <li>Bienvenido Admin</li>
                                 <li><a href="#">Credenciales</a></li>
-                                <li><a href="#">Salir</a></li>
+                                <li><a href="#" id="buttonLogout">Salir</a></li>
                             </ul>
                             <br />
                             <span class="small grey"><?php echo date('d/m/Y h:i:s'); ?></span>
