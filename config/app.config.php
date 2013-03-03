@@ -67,4 +67,25 @@ $conf['adminUsuarios'] = array(
     'archivo' => 'admin/usuarios.view.html',
     'layout' => LAYOUT_ADMIN
 );
+
+
+$conf['secre'] = array(
+    'archivo' => 'secretaria/index.view.html',
+    'layout' => LAYOUT_ADMIN
+);
+
+$conf['secreAlumnos'] = array(
+    'archivo' => 'secre/',
+    'layout' => LAYOUT_ADMIN
+);
+
+$conf['secrePagos'] = array(
+    'archivo' => 'admin/',
+    'layout' => LAYOUT_ADMIN
+);
+
+$conf['secreInformes'] = array(
+    'archivo' => 'admin/',
+    'layout' => LAYOUT_ADMIN
+);
 ?>
