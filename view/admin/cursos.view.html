@@ -1,6 +1,6 @@
 <h2>Cursos</h2>
 <div class="block ">
-    <form>
+    <form id="frmCursos">
         <table class="form">
             <tr>
                 <td class="col1">
@@ -28,24 +28,73 @@
             </tr>
             <tr>
                 <td style="vertical-align: top; padding-top: 9px;">
-                    <label>
-                        Contenido del Curso:</label>
+                    <label>Contenido del Curso:</label>
                 </td>
                 <td>
-                    <div class="divTextarea">                      
-                        <textarea id="txtContenido"></textarea>                        
-                    </div>
-
+                    <textarea id="txtContenido"></textarea>                        
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Visualizaci&oacute;n:</label>
+                </td>
+                <td>
+                    <input type="radio" value="true" checked="checked" name="rdEstado" id="rdEstado1"/>Activo
+                    <input type="radio" value="true" name="rdEstado" id="rdEstado2"/>Inactivo
                 </td>
             </tr>
             <tr>
                 <td></td>
                 <td>
+                    <hr>
                     <input type="button" id="btnAgregarCur" value="Agregar">
                     <input type="button" id="btnModificarCur" value="Modificar">
-                    <input type="button" id="btnBuscarCur" value="Buscar">
+                    <input type="button" id="btnBuscarCur" value="Buscar" title="Boton Funcional">
                 </td>
             </tr>
         </table>
     </form>
+</div>
+<div class="divFormBuscarCurso" style="display:none;">
+    <form id="frmBuscarCursos">
+        <table>
+            <tr>
+                <td>Escribe el titulo del curso:</td>
+                <td><input type="text" id="txtBuscarCurso"></td>
+                <td><input type="button" id="btnBuscarCursos" value="Buscar" title="Boton Funcional"/></td>
+            </tr>
+        </table>
+    </form>
+    <div id="divResultadoBusquedaCurso" style="display:none;">
+        <table class="table-result" width="100%">
+            <tr>
+                <th width="5%" >#</th>
+                <th width="20%">Titulo</th>
+                <th width="10%">Fecha de Inicio</th>
+                <th width="10%">Fecha de Finalizacion</th>
+                <th width="10%">Opcion</th>
+            </tr>
+            <tr id="row1">
+                <td align="center">1</td>
+                <td>PHP AVANZADO</td>
+                <td align="center">01-01-2013</td>
+                <td align="center">30-06-2013</td>
+                <td align="center"><input type="button" class="btnSeleccionarCurso" value="Selecccionar" title="Boton Funcional"/></td>
+            </tr>
+            <tr id="row2">
+                <td align="center">2</td>
+                <td>HTML Y CSS</td>
+                <td align="center">01-01-2013</td>
+                <td align="center">30-06-2013</td>
+                <td align="center"><input type="button" class="btnSeleccionarCurso" value="Selecccionar" title="Boton Funcional"/></td>
+            </tr>
+            <tr id="row3">
+                <td align="center">3</td>
+                <td>MICROSOFT WORD 2010</td>
+                <td align="center">01-01-2013</td>
+                <td align="center">30-06-2013</td>
+                <td align="center"><input type="button" class="btnSeleccionarCurso" value="Selecccionar" title="Boton Funcional"/></td>
+            </tr>
+        </table>
+    </div>
 </div>

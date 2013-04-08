@@ -8,21 +8,17 @@
         <link rel="stylesheet" type="text/css" href="<?php echo PATH_CSS; ?>/layout.css" media="screen" />        
         <link rel="stylesheet" type="text/css" href="<?php echo PATH_CSS; ?>/nav.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="<?php echo PATH_CSS; ?>/cupertino/jquery-ui-1.10.1.custom.css" media="screen" />
-        
-<!--        <link rel="stylesheet" type="text/css" href="<?php echo PATH_PLUGINS; ?>/wysihtml5/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="<?php echo PATH_PLUGINS; ?>/wysihtml5/prettify.css" />
-        <link rel="stylesheet" type="text/css" href="<?php echo PATH_PLUGINS; ?>/wysihtml5/bootstrap-wysihtml5.css" />-->
+
+        <link rel="stylesheet" type="text/css" href="<?php echo PATH_PLUGINS; ?>/tinyeditor/tinyeditor.css" media="screen" />
+
+
 
         <script type="text/javascript" src="<?php echo PATH_JS; ?>/jquery-1.9.1.js"></script>
         <script type="text/javascript" src="<?php echo PATH_JS; ?>/jquery-ui-1.10.1.custom.js"></script>
-        
 
-<!--        <script src="<?php echo PATH_PLUGINS; ?>/wysihtml5/wysihtml5-0.3.0.js"></script>        
-        <script src="<?php echo PATH_PLUGINS; ?>/wysihtml5/prettify.js"></script>
-        <script src="<?php echo PATH_PLUGINS; ?>/wysihtml5/bootstrap.js"></script>
-        <script src="<?php echo PATH_PLUGINS; ?>/wysihtml5/bootstrap-wysihtml5.js"></script>-->
-        
-        
+        <script type="text/javascript" src="<?php echo PATH_PLUGINS; ?>/tinyeditor/tiny.editor.packed.js"></script>
+
+
         <script type="text/javascript" src="<?php echo PATH_JS; ?>/setup.js"></script>
     </head>
     <body>
@@ -39,8 +35,8 @@
                         <div class="floatleft marginleft10">
                             <ul class="inline-ul floatleft">
                                 <li>Bienvenido Admin</li>
-                                <li><a href="#">Credenciales</a></li>
-                                <li><a href="#" id="buttonLogout">Salir</a></li>
+                                <li><a href="#" id="buttonCredencialesAdmin" title="Boton Funcional">Credenciales</a></li>
+                                <li><a href="#" id="buttonLogout" title="Boton Funcional">Salir</a></li>
                             </ul>
                             <br />
                             <span class="small grey"><?php echo date('d/m/Y h:i:s'); ?></span>
@@ -69,16 +65,16 @@
                             <span>Aulas</span>
                         </a>
                     </li>
-                    <li class="ic-asignacion">
-                        <a href="?mod=adminAsignacionCursos">
-                            <span>Asignacion de Cursos</span>
-                        </a>
-                    </li>
                     <li class="ic-mantenimiento">
                         <a href="?mod=adminPersonas">
                             <span>Mantenimiento de Personas</span>
                         </a>
                     </li>
+                    <li class="ic-asignacion">
+                        <a href="?mod=adminAsignacionCursos">
+                            <span>Asignacion de Cursos</span>
+                        </a>
+                    </li>                    
                     <li class="ic-usuario">
                         <a href="?mod=adminUsuarios">
                             <span>Usuarios Registrados</span>

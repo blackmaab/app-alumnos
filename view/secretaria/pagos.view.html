@@ -1,0 +1,117 @@
+<h2>Registrar Pagos</h2>
+<div class="block">
+    <div id="divFormulario">
+        <form id="frmBuscarAlumnos">
+            <div class="seccion">
+                <h1>Busqueda de alumnos:</h1>
+                <table class="formBuscar">
+                    <tr>
+                        <td>
+                            <label>Buscar por:</label>
+                        </td>
+                        <td>
+                            <select id="cmbFilterAlum">
+                                <option value="0" selected="selected">Carnet</option>
+                                <option value="1">Nombre</option>
+                                <option value="2">Apellido</option>                       
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" id="txtBuscarAlum" />
+                        </td>
+                        <td>
+                            <input type="button" id="btnBuscarAlum" value="Buscar" title="Boton Funcional">
+                        </td>
+                    </tr>            
+                </table>
+            </div>       
+        </form> 
+    </div>
+
+    <div id="divResultado" class="formResultado" style="display: none;">
+        <h3>Resultado</h3>
+        <table>
+            <tr>
+                <th>Carnet</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Opcion</th>                
+            </tr>
+            <tr>
+                <td>AM001</td>
+                <td>ANA MARIA</td>
+                <td>MARTINEZ SEGURA</td>
+                <td><input type="button" id="btnSeleccionar" value="Seleccionar" title="Boton Funcional"/></td>
+            </tr>
+            <tr>
+                <td>MA001</td>
+                <td>MARCOS ADALBERTO</td>
+                <td>ALAS PERLA</td>
+                <td><input type="button" id="btnSeleccionar1" value="Seleccionar" /></td>
+            </tr>
+            <tr>
+                <td>TR001</td>
+                <td>TOMAS NEFTALY</td>
+                <td>ROSA CHAVEZ</td>
+                <td><input type="button" id="btnSeleccionar2" value="Seleccionar" /></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="divPagos" class="divPagos" style="display: none;">
+        <h3>Detalle de Pago</h3>
+        <table width="60%">
+            <tr>
+                <th colspan="4">ALUMNO: ANA MARIA MARTINEZ SEGURA CARNET: AM001</th>
+            </tr>            
+            <tr>
+                <th width="2%">CORRELATIVO</th>               
+                <th width="10%">PAGO A REALIZAR</th>
+                <th width="2%">TOTAL A PAGAR</th>
+                <th width="5%">OPCION</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>MATRICULO DEL CURSO: HTML AVANZADO</td>
+                <td>$ 30.00</td>
+                <td><input type="button" id="btnSeleccionarPago" value="Realizar Pago"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>MENSUALIDAD DE ENERO</td>
+                <td>$ 15.00</td>
+                <td><input type="button" id="btnSeleccionarPago1" value="Realizar Pago"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>MENSUALIDAD DE FEBRERO</td>
+                <td>$ 15.00</td>
+                <td><input type="button" id="btnSeleccionarPago2" value="Realizar Pago"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>MENSUALIDAD DE MARZO</td>
+                <td>$ 15.00</td>
+                <td><input type="button" id="btnSeleccionarPago3" value="Realizar Pago"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>MENSUALIDAD DE ABRIL</td>
+                <td>$ 15.00</td>
+                <td><input type="button" id="btnSeleccionarPago4" value="Realizar Pago"></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>MENSUALIDAD DE MAYO</td>
+                <td>$ 15.00</td>
+                <td><input type="button" id="btnSeleccionarPago5" value="Realizar Pago"></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>MENSUALIDAD DE JUNIO</td>
+                <td>$ 15.00</td>
+                <td><input type="button" id="btnSeleccionarPago6" value="Realizar Pago"></td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,93 @@
+<h2>Registrar Calificaciones</h2>
+<div class="block">
+    <div id="divFormulario">
+        <form id="frmBuscarAlumnosCur">
+            <div class="seccion">
+                <h1>Busqueda de alumnos:</h1>
+                <table class="formBuscar">
+                    <tr>
+                        <td>
+                            <label>Buscar por:</label>
+                        </td>
+                        <td>
+                            <select id="cmbFilterAlumCur">
+                                <option value="0" selected="selected">Carnet</option>
+                                <option value="1">Nombre</option>
+                                <option value="2">Apellido</option>
+                                <option value="3">Curso</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" id="txtBuscarAlumCur" />
+                        </td>
+                        <td>
+                            <input type="button" id="btnBuscarAlumCur" value="Buscar" title="Boton Funcional">
+                        </td>
+                    </tr>            
+                </table>
+            </div>       
+        </form> 
+    </div>
+
+    <div id="divResultado" class="formResultado" style="display: none;">
+        <h3>Resultado</h3>
+        <table>
+            <tr>
+                <th>Carnet</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Opcion</th>                
+            </tr>
+            <tr>
+                <td>AM001</td>
+                <td>ANA MARIA</td>
+                <td>MARTINEZ SEGURA</td>
+                <td><input type="button" id="btnSeleccionar0" value="Seleccionar" title="Boton Funcional" /></td>
+            </tr>
+            <tr>
+                <td>MA001</td>
+                <td>MARCOS ADALBERTO</td>
+                <td>ALAS PERLA</td>
+                <td><input type="button" id="btnSeleccionar1" value="Seleccionar" /></td>
+            </tr>
+            <tr>
+                <td>TR001</td>
+                <td>TOMAS NEFTALY</td>
+                <td>ROSA CHAVEZ</td>
+                <td><input type="button" id="btnSeleccionar2" value="Seleccionar" /></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="divPagos" class="divPagos" style="display: none;">
+        <h3>Detalle de Calificaciones</h3>
+        <table width="60%">
+            <tr>
+                <th colspan="8">ALUMNO: ANA MARIA MARTINEZ SEGURA CARNET: AM001</th>
+            </tr>
+            <tr>
+                <th colspan="8">CURSO: HTML AVANZADO</th>
+            </tr>            
+            <tr>
+                <th width="2%">CORRELATIVO</th>               
+                <th width="2%">1° PERIODO</th>
+                <th width="2%">2° PERIODO</th>
+                <th width="2%">3° PERIODO</th>
+                <th width="2%">4° PERIODO</th>
+                <th width="2%">5° PERIODO</th>
+                <th width="2%">6° PERIODO</th>
+                <th width="2%">OPCION</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>9.00</td>
+                <td>7.80</td>
+                <td><input type="text" size="6" id="txtNota3"></td>
+                <td><input type="text" size="6" id="txtNota4"></td>
+                <td><input type="text" size="6" id="txtNota5"></td>
+                <td><input type="text" size="6" id="txtNota6"></td>
+                <td><input type="button" id="btnGuardarNota" value="Guardar"></td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,4 +1,49 @@
 <h2>Horarios</h2>
 <div class="block">
-    
+    <form id="frmHorarios">
+        <table class="form">
+            <tr>
+                <td class="col1">
+                    <label>Hora de Inicio:</label>
+                </td>
+                <td class="col2">
+                    <input type="text" id="txtHoraInicio"/>
+                </td>
+            </tr>            
+            <tr>
+                <td>
+                    <label>Hora de Finalizaci&oacute;n:</label>
+                </td>
+                <td>
+                    <input type="text" id="txtHoraFin" />
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding-top: 9px;">
+                    <label>Dias a impartirse:</label>
+                </td>
+                <td>
+                    <textarea id="txtContenido"></textarea>                        
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Visualizaci&oacute;n:</label>
+                </td>
+                <td>
+                    <input type="radio" value="true" checked="checked" name="rdEstado" id="rdEstado1"/>Activo
+                    <input type="radio" value="true" name="rdEstado" id="rdEstado2"/>Inactivo
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <hr>
+                    <input type="button" id="btnAgregarHor" value="Agregar">
+                    <input type="button" id="btnModificarHor" value="Modificar">
+                    <input type="button" id="btnBuscarHor" value="Buscar">
+                </td>
+            </tr>
+        </table>
+    </form>
 </div>

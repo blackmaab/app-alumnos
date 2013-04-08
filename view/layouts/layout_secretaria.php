@@ -8,12 +8,17 @@
         <link rel="stylesheet" type="text/css" href="<?php echo PATH_CSS; ?>/layout.css" media="screen" />        
         <link rel="stylesheet" type="text/css" href="<?php echo PATH_CSS; ?>/nav.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="<?php echo PATH_CSS; ?>/cupertino/jquery-ui-1.10.1.custom.css" media="screen" />
-        
+
+        <link rel="stylesheet" type="text/css" href="<?php echo PATH_PLUGINS; ?>/tinyeditor/tinyeditor.css" media="screen" />
+
+
 
         <script type="text/javascript" src="<?php echo PATH_JS; ?>/jquery-1.9.1.js"></script>
         <script type="text/javascript" src="<?php echo PATH_JS; ?>/jquery-ui-1.10.1.custom.js"></script>
-                
-        
+
+        <script type="text/javascript" src="<?php echo PATH_PLUGINS; ?>/tinyeditor/tiny.editor.packed.js"></script>
+
+
         <script type="text/javascript" src="<?php echo PATH_JS; ?>/setup.js"></script>
     </head>
     <body>
@@ -25,13 +30,13 @@
                     </div>
                     <div class="floatright">
                         <div class="floatleft">
-                            <img src="resource/images/img-profile.jpg" title="Usuario: Admin" />
+                            <img src="resource/images/img-profile.jpg" title="Usuario: Secretaria" />
                         </div>
                         <div class="floatleft marginleft10">
                             <ul class="inline-ul floatleft">
-                                <li>Bienvenido Secretaria</li>
-                                <li><a href="#">Credenciales</a></li>
-                                <li><a href="#">Salir</a></li>
+                                <li>Bienvenida Secretaria</li>
+                                <li><a href="#" id="buttonCredencialesSecretaria" title="Boton Funcional">Credenciales</a></li>
+                                <li><a href="#" id="buttonLogout" title="Boton Funcional">Salir</a></li>
                             </ul>
                             <br />
                             <span class="small grey"><?php echo date('d/m/Y h:i:s'); ?></span>
@@ -45,17 +50,17 @@
             </div>
             <div class="grid_12">
                 <ul class="nav main">
-                    <li class="ic-cursos">
+                    <li class="ic-alumno">
                         <a href="?mod=secreAlumnos">
                             <span>Registrar Alumno</span>
                         </a> 
                     </li>
-                    <li class="ic-horarios">
+                    <li class="ic-cash">
                         <a href="?mod=secrePagos">
                             <span>Registrar Pagos</span>
                         </a>
                     </li>
-                    <li class="ic-aulas">
+                    <li class="ic-report">
                         <a href="?mod=secreInformes">
                             <span>Reportes / Informes</span>
                         </a>

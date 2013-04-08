@@ -1,0 +1,195 @@
+<h2>Registro de Alumnos</h2>
+<div class="block">
+    <form id="frmPersonas">
+        <div class="seccion">
+            <h1>Datos Personales</h1>
+            <table class="form">
+                <tr>
+                    <td class="col1">
+                        <label>No. Carnet (Generado):</label>
+                    </td>
+                    <td class="col2">
+                        <input type="text" class="small" id="txtCarnetPer" readonly="readonly"/>
+                    </td>
+                </tr>                
+                <tr>
+                    <td class="col1">
+                        <label>Nombres:</label>
+                    </td>
+                    <td class="col2">
+                        <input type="text" class="mini" id="txtNombrePer"/>
+                    </td>
+                </tr>            
+                <tr>
+                    <td>
+                        <label>Apellidos:</label>
+                    </td>
+                    <td>
+                        <input type="text" class="mini" id="txtApellidoPer" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Fecha de nacimiento:</label>
+                    </td>
+                    <td>
+                        <input type="text" class="small" id="txtFechaNacimientoPer" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Sexo:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="sexo" value="F"  id="rdSexo1Per">Femenino
+                        <input type="radio" name="sexo" value="M" id="rdSexo2Per">Masculino
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Estado civil:</label>
+                    </td>
+                    <td>
+                        <select id="cmbEstadoCivilPer">
+                            <option selected="selected" value="S">Soltero</option>
+                            <option value="C">Casado</option>
+                            <option value="V">Viudo</option>
+                            <option value="D">Divorciado</option>
+                            <option value="A">Acompañado</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>DUI:</label>
+                    </td>
+                    <td>
+                        <input type="text" class="small" id="txtDuiPer" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>NIT:</label>
+                    </td>
+                    <td>
+                        <input type="text" class="small" id="txtNitPer" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top; padding-top: 9px;">
+                        <label>Direcci&oacute;n:</label>
+                    </td>
+                    <td>
+                        <textarea id="txtDireccionPer"></textarea>                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Tel&eacute;fono M&oacute;vil:</label>
+                    </td>
+                    <td>
+                        <input type="text" class="small" id="txtCelularPer" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Tel&eacute;fono Casa:</label>
+                    </td>
+                    <td>
+                        <input type="text" class="small" id="txtTelefonoPer" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Correo Electronico:</label>
+                    </td>
+                    <td>
+                        <input type="text" class="small" id="txtEmailPer" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Fotograf&iacute;a:</label>
+                    </td>
+                    <td>
+                        <input type="file" id="txtFotoPer">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="seccion">
+            <h1>Datos Familiares</h1>
+            <table class="form">
+                <tr>
+                    <td class="col1">
+                        <label>Nombre del Padre:</label>
+                    </td>
+                    <td class="col2">
+                        <input type="text" class="mini" id="txtPadrePer"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">
+                        <label>Nombre de la Madre:</label>
+                    </td>
+                    <td class="col2">
+                        <input type="text" class="mini" id="txtMadrePer"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col1">
+                        <label>Nombre del Conyugue:</label>
+                    </td>
+                    <td class="col2">
+                        <input type="text" class="mini" id="txtConyuguePer"/>
+                    </td>
+                </tr>                
+            </table>
+        </div>
+
+        <div class="seccion" id="divAcademico2">
+            <h1>Datos Academicos</h1>
+            <table class="form">
+                <tr>
+                    <td style="vertical-align: top; padding-top: 9px;">
+                        <label>Lugar de Estudio:</label>
+                    </td>
+                    <td>
+                        <textarea id="txtLugarEstudioPer"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Nivel de Estudio:</label>
+                    </td>                    
+                    <td>
+                        <input type="text" id="txtNivelEstudioPer" class="mini" />
+                    </td>
+                </tr>
+            </table>          
+        </div>
+
+        <table class="form">
+            <tr>
+                <td>
+                    <label>Estado en el Sistema:</label>
+                </td>
+                <td>
+                    <input type="radio" value="true" checked="checked" name="rdEstado" id="rdEstado1"/>Activo
+                    <input type="radio" value="true" name="rdEstado" id="rdEstado2"/>Inactivo
+                </td>
+            </tr>
+            <tr>
+                <td><br><hr></td>
+                <td>
+                    <br>
+                    <hr>
+                    <input type="button" id="btnAgregarPer" value="Agregar">
+                    <input type="button" id="btnModificarPer" value="Modificar">
+                    <input type="button" id="btnBuscarPer" value="Buscar">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

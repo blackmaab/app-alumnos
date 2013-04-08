@@ -1,4 +1,34 @@
 <h2>Aulas</h2>
 <div class="block">
-    
+    <form id="frmAulas">
+        <table class="form">
+
+            <tr>
+                <td style="vertical-align: top; padding-top: 9px;">
+                    <label>Detalle de Sal&oacute;n / Edificio:</label>
+                </td>
+                <td>
+                    <textarea id="txtContenido"></textarea>                        
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Visualizaci&oacute;n:</label>
+                </td>
+                <td>
+                    <input type="radio" value="true" checked="checked" name="rdEstado" id="rdEstado1"/>Activo
+                    <input type="radio" value="true" name="rdEstado" id="rdEstado2"/>Inactivo
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <hr>
+                    <input type="button" id="btnAgregarAul" value="Agregar">
+                    <input type="button" id="btnModificarAul" value="Modificar">
+                    <input type="button" id="btnBuscarAul" value="Buscar">
+                </td>
+            </tr>
+        </table>
+    </form>
 </div>

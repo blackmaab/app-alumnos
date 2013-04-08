@@ -1,4 +1,69 @@
 <h2>Asignacion de Cursos</h2>
 <div class="block">
-    
+    <form id="frmAsignacion">
+        <table class="form">
+            <tr>
+                <td class="col1">
+                    <label>Curso a impartir</label>
+                </td>
+                <td class="col2">
+                    <input type="text" class="mini" id="txtCursoAsig"/>
+                    <input type="button" id="txtBuscarCurso" value="Buscar">
+                </td>
+            </tr>            
+            <tr>
+                <td>
+                    <label>Profesor / Docente <br>a impartir curso</label>
+                </td>
+                <td>
+                    <input type="text" class="mini" id="txtProfesorAsig" />
+                    <input type="button" id="txtBuscarProfesor" value="Buscar">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Aula asignada:</label>
+                </td>
+                <td>
+                    <input type="text" class="mini" id="txtAulaAsig" />
+                    <input type="button" id="txtBuscarAula" value="Buscar">
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <label>Horario asignado:</label>
+                </td>
+                <td>
+                    <input type="text" class="mini" id="txtHorarioAsig" />
+                    <input type="button" id="txtBuscarHorario" value="Buscar">
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <label>Cantidad de participantes:</label>
+                </td>
+                <td>
+                    <input type="text" class="small" id="txtCantidadAsig" />                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Visualizaci&oacute;n:</label>
+                </td>
+                <td>
+                    <input type="radio" value="true" checked="checked" name="rdEstado" id="rdEstado1"/>Activo
+                    <input type="radio" value="true" name="rdEstado" id="rdEstado2"/>Inactivo
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <hr>
+                    <input type="button" id="btnAgregarAsig" value="Agregar">
+                    <input type="button" id="btnModificarAsig" value="Modificar">
+                    <input type="button" id="btnBuscarAsig" value="Buscar">
+                </td>
+            </tr>
+        </table>
+    </form>
 </div>

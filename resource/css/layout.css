@@ -39,7 +39,7 @@ a:hover {
 .container_16 {
     padding: 10px;
     background:#2E5E79;
-    height: 717px;
+    /*height: 717px;*/
 }
 
 
@@ -138,7 +138,7 @@ h2#page-heading {
 
 
 .grid_12 .box h2 a {
-    background-position: 99% 50%;
+    background-position: 99% 50%;   
 }
 
 
@@ -1135,3 +1135,76 @@ a.btn.btn-large, a.btn-icon.btn-large { line-height: 42px; padding-bottom: 0; }
 }
 
 .gallery-sand .sorting{background-color:white !important;}
+
+
+/*TEXTAREA PERSONALIZADO*/
+textarea{
+    width: 400px; 
+    height: 200px;
+}
+
+
+.seccion{
+    padding-left: 10px;
+    border:solid 1px #2E5E79;
+}
+.seccion h1{
+    padding-top: 8px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    text-decoration: underline;    
+}
+
+table.formBuscar{    
+    font-weight:bold;
+}
+table.formBuscar td{
+    padding-left: 8px;
+}
+
+.formResultado{
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.formResultado h3{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.formResultado table {
+    border: solid 1px black;
+    font-size: 14px;
+}
+.formResultado table th,
+.formResultado table td{
+    text-align: justify;
+    padding-left: 20px;    
+}
+
+.formResultado table td input[type=button]{
+    font-size: 10px;
+}
+
+.divPagos, #divAgregarCurso{
+    padding-left:10px; 
+}
+.divPagos h3,#divAgregarCurso h3{    
+    font-size: 13px;
+}
+
+.divPagos table,#divAgregarCurso table{    
+    border: solid 1px black;
+}
+.divPagos table th, #divAgregarCurso table th{
+    text-align: center;
+    padding: 5px;
+}
+.divPagos table td, #divAgregarCurso table td{
+    text-align: center;
+}
+
+.table-result th{
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

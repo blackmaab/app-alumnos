@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a9ec57be-236a-4433-8281-8bb783612ce0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="New Dataset 1" uuid="5318786a-4445-46e0-8a06-90b7d4df6a0e">
+		<queryString language="SQL">
+			<![CDATA[SELECT
+     categories.`CategoryID` AS categories_CategoryID,
+     categories.`CategoryName` AS categories_CategoryName,
+     categories.`Description` AS categories_Description,
+     categories.`Picture` AS categories_Picture
+FROM
+     `categories` categories]]>
+		</queryString>
+		<field name="categories_CategoryID" class="java.lang.Integer"/>
+		<field name="categories_CategoryName" class="java.lang.String"/>
+		<field name="categories_Description" class="java.lang.String"/>
+		<field name="categories_Picture" class="java.lang.String"/>
+		<group name="categories_CategoryID">
+			<groupExpression><![CDATA[$F{categories_CategoryID}]]></groupExpression>
+		</group>
+	</subDataset>
+	<queryString>
+		<![CDATA[SELECT
+     categories.`CategoryID` AS categories_CategoryID,
+     categories.`CategoryName` AS categories_CategoryName,
+     categories.`Description` AS categories_Description,
+     categories.`Picture` AS categories_Picture
+FROM
+     `categories` categories]]>
+	</queryString>
+	<field name="categories_CategoryID" class="java.lang.Integer"/>
+	<field name="categories_CategoryName" class="java.lang.String"/>
+	<field name="categories_Description" class="java.lang.String"/>
+	<field name="categories_Picture" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="50e63749-b190-45d8-952e-1fdd0a759d5c" x="11" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[categories_CategoryID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="22525f3f-139d-4089-ad4b-1630b158ed46" x="135" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[categories_CategoryName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ed8219ad-40fe-42b6-a623-c949afb768dc" x="281" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[categories_Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d6124fad-6add-4817-9ef7-e28a9aa42b80" x="420" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[categories_Picture]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement uuid="4a8aeeb6-1214-49aa-9201-49acce5507e7" x="11" y="7" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{categories_CategoryID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b3baa808-befb-4e0f-96cd-a3bdd12f7830" x="135" y="11" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{categories_CategoryName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7406b833-a723-4818-87de-83ebf5eda17b" x="281" y="8" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{categories_Description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="715584d6-3b4d-4fe6-942c-adca51b1ffe5" x="420" y="16" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{categories_Picture}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
